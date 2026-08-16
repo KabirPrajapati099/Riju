@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riju Bamanu — Visual Arts & Art Direction</title>
+
+  <!-- High-End Editorial Typography: Syne (Display), Instrument Serif (Accents), Manrope (Clean UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Difference Blend Cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- Header with Glassmorphism Effect -->
+  <header>
+    <a href="#" class="brand" style="text-decoration: none;">
+      RIJU BAMANU
+      <span>Visual Designer</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Index</a></li>
+      <li><a href="#work">Archive</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero" id="about">
+
+      <div class="hero-content">
+        <!-- Abstract Graphic Positioned in Header Space -->
+        <svg class="spin-badge" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 0L53.5 38L85.5 14.5L62 46.5L100 50L62 53.5L85.5 85.5L53.5 62L50 100L46.5 62L14.5 85.5L38 53.5L0 50L38 46.5L14.5 14.5L46.5 38L50 0Z" fill="var(--text-muted)"/>
+        </svg>
+
+        <!-- Main Title Block -->
+        <h1 class="hero-title">
+          Visual<br>
+          <span class="serif-italic">Arts &</span><br>
+          Direction
+        </h1>
+
+        <!-- Studio Profile Section Placed Below -->
+        <div class="hero-about">
+          <div class="about-label">Studio Profile</div>
+          <p>I operate at the intersection of structural precision and raw aesthetics. Specializing in high-impact brand systems, editorial layouts, and kinetic typography to build visual experiences that are deeply functional and memorably human.</p>
+          <div class="specs">
+            <div class="spec-tag">Brand Identity</div>
+            <div class="spec-tag">Editorial Systems</div>
+            <div class="spec-tag">Kinetic Typography</div>
+            <div class="spec-tag">Digital Brutalism</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Moving Marquee -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>Aesthetic Precision</span><span>—</span>
+      <span class="highlight">Visual Systems</span><span>—</span>
+      <span>Editorial Design</span><span>—</span>
+      <span class="highlight">Art Direction</span><span>—</span>
+      <span>Aesthetic Precision</span><span>—</span>
+      <span class="highlight">Visual Systems</span><span>—</span>
+      <span>Editorial Design</span><span>—</span>
+      <span class="highlight">Art Direction</span><span>—</span>
+    </div>
+    <div class="marquee-content" aria-hidden="true">
+      <span>Aesthetic Precision</span><span>—</span>
+      <span class="highlight">Visual Systems</span><span>—</span>
+      <span>Editorial Design</span><span>—</span>
+      <span class="highlight">Art Direction</span><span>—</span>
+      <span>Aesthetic Precision</span><span>—</span>
+      <span class="highlight">Visual Systems</span><span>—</span>
+      <span>Editorial Design</span><span>—</span>
+      <span class="highlight">Art Direction</span><span>—</span>
+    </div>
+  </div>
+
+  <!-- Projects Archive -->
+  <section class="container projects-sec" id="work">
+    <div class="section-header">
+      <h2 class="sec-title">Selected<br>Archive</h2>
+      <div class="sec-meta">(2024–2026)</div>
+    </div>
+
+    <!-- P1 -->
+    <article class="project-row" data-cursor="hover-view" onclick="openModal('SHANGRI-LA OF NEPAL TOUR', 'Travel Advertisement', 'A travel advertisement designed as a practice project to test creative skills. Aimed at capturing the target audience\'s attention and driving engagement through bold typography, vibrant colors, and compelling imagery.')">
+      <div class="proj-num">01/</div>
+      <div class="proj-info">
+        <div class="proj-category">Travel Advertisement</div>
+        <h3 class="proj-title">SHANGRI-LA<br>OF NEPAL TOUR</h3>
+        <p class="proj-desc">Bold typography, vibrant colors, and compelling imagery combined to communicate a tour package's key messages effectively.</p>
+      </div>
+      <div class="proj-img-wrap">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80" alt="Shangri-La of Nepal Tour advertisement">
+      </div>
+    </article>
+
+    <!-- P2 -->
+    <article class="project-row" data-cursor="hover-view" onclick="openModal('DOLPHIN EDUCATION', 'Brochure Design', 'A brochure design project promoting study abroad opportunities with Dolphin Education, highlighting top English-speaking countries such as Australia, Canada, New Zealand, the UK, and the USA. Uses a clean, modern layout with vibrant images and national flags to attract prospective students.')">
+      <div class="proj-num">02/</div>
+      <div class="proj-info">
+        <div class="proj-category">Brochure Design</div>
+        <h3 class="proj-title">DOLPHIN<br>EDUCATION</h3>
+        <p class="proj-desc">Study-abroad brochure with a clean, modern layout, vibrant imagery, and national flags for top English-speaking destinations.</p>
+      </div>
+      <div class="proj-img-wrap">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80" alt="Dolphin Education brochure">
+      </div>
+    </article>
+
+    <!-- P3 -->
+    <article class="project-row" data-cursor="hover-view" onclick="openModal('BURGER BRUNCH', 'Poster Design', 'A poster design project created as personal graphic design practice to improve creativity and visual communication skills. Explores modern layouts, typography, color combinations, and balanced composition for attractive promotional posters.')">
+      <div class="proj-num">03/</div>
+      <div class="proj-info">
+        <div class="proj-category">Poster Design</div>
+        <h3 class="proj-title">BURGER<br>BRUNCH</h3>
+        <p class="proj-desc">A promotional poster exploring modern layouts, bold typography, and balanced composition to grab attention.</p>
+      </div>
+      <div class="proj-img-wrap">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80" alt="Burger Brunch poster design">
+      </div>
+    </article>
+
+    <!-- P4 -->
+    <article class="project-row" data-cursor="hover-view" onclick="openModal('GROW YOUR BUSINESS', 'Flyer Design', 'A flyer design marketing the services of a creative agency focused on business growth solutions. Features a professional image of a confident businesswoman, strong orange and black color accents, and a geometric layout that guides the viewer through web design and search optimization services.')">
+      <div class="proj-num">04/</div>
+      <div class="proj-info">
+        <div class="proj-category">Flyer Design</div>
+        <h3 class="proj-title">GROW YOUR<br>BUSINESS</h3>
+        <p class="proj-desc">A geometric, orange-and-black flyer marketing a creative agency's web design and SEO services.</p>
+      </div>
+      <div class="proj-img-wrap">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Grow Your Business flyer design">
+      </div>
+    </article>
+
+    <!-- P5 -->
+    <article class="project-row" data-cursor="hover-view" onclick="openModal('COKO PRO', 'Business Card Design', 'A professional visiting card design reflecting the personality and professionalism of the individuals or businesses represented. Close attention was paid to layout, font selection, and color harmony to create memorable, functional cards with a distinctive style.')">
+      <div class="proj-num">05/</div>
+      <div class="proj-info">
+        <div class="proj-category">Business Card Design</div>
+        <h3 class="proj-title">COKO<br>PRO</h3>
+        <p class="proj-desc">A memorable, functional visiting card built on careful layout, font selection, and color harmony.</p>
+      </div>
+      <div class="proj-img-wrap">
+        <img src="https://images.unsplash.com/photo-1560421683-6856ea585c78?auto=format&fit=crop&w=1200&q=80" alt="Coko Pro business card design">
+      </div>
+    </article>
+  </section>
+
+  <!-- Contact Section (Side-by-side intro text layout) -->
+  <section class="contact-sec" id="contact">
+    <div class="container contact-container">
+
+      <!-- Top Row: Heading and Subtext side-by-side -->
+      <div class="contact-top-row">
+        <h2 class="contact-label-large">Let's craft something<br>exceptional.</h2>
+        <p class="contact-text">
+          Whether you have a strict brief or an ambiguous idea, I'm available to help structure, design, and direct your next digital or physical experience. Based in standard dimensions, operating globally.
+        </p>
+      </div>
+
+      <!-- Bottom Row: Contact Methods -->
+      <div class="contact-methods-row">
+        <div class="method-block">
+          <span class="method-label">Direct Inquiry</span>
+          <a href="mailto:bamanureeju@gmail.com" class="method-link">bamanureeju@<br>gmail.com</a>
+        </div>
+
+        <div class="method-block">
+          <span class="method-label">Direct Line</span>
+          <a href="tel:+977 9745968589" class="method-link" style="font-family: var(--font-serif); font-style: italic; font-weight: 400;">
+            +977 9745968589
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>© 2026 RIJU BAMANU</div>
+    <div>ALL RIGHTS RESERVED</div>
+    <div>BASED IN BAGMATI, NEPAL</div>
+  </footer>
+
+  <!-- Editorial Modal -->
+  <div class="modal-wrap" id="projModal" onclick="closeOnBg(event)">
+    <div class="modal-inner">
+      <button class="modal-close-btn" onclick="closeModal()">×</button>
+
+      <span class="m-cat" id="mdlCat">Category</span>
+      <h3 class="m-title" id="mdlTitle">Project Title</h3>
+      <p class="m-desc" id="mdlDesc">Project description goes here.</p>
+
+      <a href="resources/RIJU BAMANU protfolio .pdf" target="_blank" class="m-cta">
+        View Complete PDF Brief
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Interactions Script -->
+  <script src="script.js"></script>
+</body>
+</html>
